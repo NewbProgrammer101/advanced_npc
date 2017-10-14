@@ -4,12 +4,12 @@ Advanced_NPC API Reference Alpha-1 (DEV)
 
 Introduction
 ------------
-You can to use to configure too many behaves for npc. 
+You can to use to configure too many behaves for npc.  
 The goal is to be able to have live villages in Minetest. 
 Here is some information about the API methods and systems.
 
 
-Inicialized NPC
+Initialized NPC
 ---------------
 The API works with some variables into Lua Entity that represent a NPC, 
 then you should initialize the Lua Entity before that it really assume 
