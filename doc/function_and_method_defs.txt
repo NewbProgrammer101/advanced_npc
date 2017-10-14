@@ -4,7 +4,7 @@ This WIP & unfinished file contains the definitions of current advanced_npc func
 
 1) Dialogue methods and functions
 
-set_response_ids_recursively() : A local function that assigns unique key IDs to dialogues and dialogue responses.
+set_response_ids_recursively() : A local function that assigns unique key IDs to dialogue responses.
 
 Example: 
 
