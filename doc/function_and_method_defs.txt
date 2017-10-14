@@ -1,0 +1,45 @@
+This WIP & unfinished file contains the definitions of current advanced_npc functions
+(Some documentation is lacking, so please bear in mind that this WIP file is just to enhance it.)
+=================================================================================
+
+1) Dialogue methods and functions
+
+set_response_ids_recursively() : A local function that assigns unique key IDs to dialogues and dialogue responses.
+
+Example: 
+
+---------------------------------------------------------------------------------
+
+npc.dialogue.register_dialogue({dialogue_definition}) : Defines and registers dialogues.
+
+Objects for the method:
+  text : The dialogue text itself. It must be included in the method.
+  tags : The flags or marks of the dialogue text. The object can be excluded.
+    Objects for tags object:
+      "unisex" : Both male and female NPCs can say the defined text. 
+      "phase1" : NPCs in phase 1 of a relationship can say the defined text. 
+
+Syntax example 1:
+npc.dialogue.register_dialogue({
+  text = "Hello.", -- "Hello." will be said by the NPC upon rightclick and displayed in the messages section.
+  tags = {"unisex", "phase1"} -- The flags that define the conditions of who and what can say the text.
+)}
+
+Syntax example 2:
+npc.dialogue.register_dialogue({
+  text = "Hello again."
+  -- The tags object is excluded, meaning that any NPC can say "Hello again." upon rightclick under no condition.
+)}
+
+----------------------------------------------------------------------------------
+
+npc.dialogue.search_dialogue_by_tags({search_tags}) : A method returning a table of dialogues if called.
+
+Objects for the method: (none)
+
+Syntax example 1:
+
+
+----------------------------------------------------------------------------------
+
+More to come.

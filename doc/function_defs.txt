@@ -1,6 +1,0 @@
-This WIP file contains the definitions of current advanced_npc functions
-=================================================================================
-
-1) Dialogue functions
-
-set_response_ids_recursively() : Assigns unique IDs to dialogues
