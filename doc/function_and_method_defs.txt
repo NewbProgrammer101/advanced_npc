@@ -18,6 +18,7 @@ Objects for the method:
     Objects for tags object:
       "unisex" : Both male and female NPCs can say the defined text. 
       "phase1" : NPCs in phase 1 of a relationship can say the defined text. 
+  key : An object that assigns dialogue_id. Similar to set_response_ids_recursively()
 
 Syntax example 1:
 npc.dialogue.register_dialogue({
@@ -38,8 +39,19 @@ npc.dialogue.search_dialogue_by_tags({search_tags}) : A method returning a table
 Objects for the method: (none)
 
 Syntax example 1:
-
+See npc.dialogue.registered_dialogues
 
 ----------------------------------------------------------------------------------
 
-More to come.
+npc.dialogue.get_cached_dialogue_key() : A method returning cached keys
+
+Objects for the method: (none)
+
+Syntax example 1:
+
+
+-----------------------------------------------------------------------------------
+
+npc.dialogue.show_options_dialogue() : Creates a multi-option dialogue based on how many dialogues have been made in the past.
+
+Objects for the method: 
